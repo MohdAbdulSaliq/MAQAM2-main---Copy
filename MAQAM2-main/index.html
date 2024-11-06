@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAQAM</title>
+
+    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="./assets/js/split.min.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+         <a class="navbar-brand" href="#">
+      <img src="./assets/images/Screenshot_2024-11-04_192018-removebg-preview.png" alt="" width="170" height="64">
+    </a>
+        </div>
+
+        <div class="menu-btn-wrap">
+            <button class="menu-btn" aria-label="메뉴열기">
+                <span class="hover-text1 open" aria-hidden="true">MENU</span>
+                <span class="hover-text2 open" aria-hidden="false">MENU</span>
+
+                <span class="hover-text1 close" aria-hidden="false">CLOSE</span>
+                <span class="hover-text2 close" aria-hidden="false">CLOSE</span>
+            </button>
+
+            <nav class="gnb">
+                <ul class="gnb-list">
+                    <li class="gnb-item">Main</li>
+                    <li class="gnb-item">About the details</li>
+                    <li class="gnb-item">Projects</li>
+                    <li class="gnb-item">Testimonials</li>
+                    <li class="gnb-item">Contact</li>
+                </ul>
+
+                <ul class="sns-link-list font-small point-gray">
+                    <li>
+                        <a href="https://www.instagram.com/ma8am_tea/?hl=en">INSTAGRAM</a>
+                    </li>
+                    <li>
+                        <a href="#">FACEBOOK</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main id="container">
+        <section class="sc-intro" id="sc1">
+   
+            <div id="main">
+                <div id="back">
+                  <img src="https://lifeboostcoffee.com/cdn/shop/articles/6695c52f34b61eb377eed2cb9b2ff365_8f09c91e-f328-4786-ac50-ff2409d08db3_1024x.png?v=1648228772" alt="" srcset="">
+                  <img src="https://www.canexdelivery.com/wp-content/uploads/2023/08/pouring-coffee-285x300.jpeg" alt="" srcset="">
+                  <img src="https://media.istockphoto.com/id/637326878/photo/woman-making-to-do-list-on-diary.jpg?s=612x612&w=0&k=20&c=meRUNqCETf5FI_pkHJmzdDoECWe-ZpeM1uXDyPj5y00=" alt="" srcset="">
+                  <img src="https://t3.ftcdn.net/jpg/06/53/40/36/360_F_653403629_XVi4A3GNyAmYMeRzYHok0CMcYxpp7y0E.jpg" alt="" srcset="">
+                  <img src="https://static.wixstatic.com/media/43836d_6659ddbed28a4dc296602565bfc9e0bf~mv2.jpg/v1/fill/w_816,h_408,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/43836d_6659ddbed28a4dc296602565bfc9e0bf~mv2.jpg" alt="" srcset="">
+                </div>
+                <div class="top">
+                  <div class="workingarea">
+               
+                    <div class="hero">
+                      <div class="hero-left">
+                        <div class="elem">
+                          <h1>Where coffee meets comfort.</h1>
+                          <h1>Warm drinks, cozy vibes</h1>
+                          <h1>Find</h1>
+                        </div>
+                        <div class="elem">
+                          <h1>Make Work</h1>
+                          <h1>Do Work</h1>
+                          <h1>Someone</h1>
+                        </div>
+                        <div class="elem">
+                          <h1>Easy.</h1>
+                          <h1>Fast.</h1>
+                          <h1>Say Hello.</h1>
+                        </div>
+            
+                        <button>Explore Now</button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <!--  Gsap is needed for Basic Effects -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+            
+              <!-- Scroll Trigger is needed for Scroll Effects -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+            
+              <!-- Three.js is needed for 3d Effects -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+            
+              <!-- Shery.js is needed for Animations -->
+              <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+              <!-- Scripts -->
+              <script src="assets/script.js"></script>
+            <div class="group-slide">
+                <div class="sticky">
+                    <div class="content-wrap">
+                        <div class="content area1">
+                            <div class="img-area">
+                                <video src="./assets/video/interior-bg.mp4" autoplay muted loop></video>
+                            </div>
+
+                            <div class="wander-img">
+                                <figure>
+                                    <img src="https://lh3.googleusercontent.com/p/AF1QipM5twiFFMLcJ87YA6LBnKDPW5vOTvAtFxBih3YG=s1360-w1360-h1020" alt>
+                                    <figcaption>
+                                        EXPERIENCE A CAFE INTERIOR<br>
+                                        DESIGNED FOR LUXURY AND COMFORT
+                                    </figcaption>
+                                    
+                            </div>
+
+                            <div class="text-area">
+                                <div class="text" style="">
+                                    <div class="text-area-img">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipMEGUqqb1sXULM6eiOJYyk7u_MKhNilF5JX03Wu=s1360-w1360-h1020" alt>
+                                    </div>
+
+                                      <strong style="font-weight: bold; font-family: 'Arial', sans-serif ;">ELEGANT</strong>
+
+
+                                    <div class="text-area-img">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipMLqnu9xRmLfJnrkWBKs0u7rxV7rGdNW18QzmOr=s1360-w1360-h1020" alt>
+                                    </div>
+                                </div>
+                                <div class="text-area-bg"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="content area2">
+                            <div class="gallery-area">
+                                <div class="gallery-bg">
+                                    <img src="./assets/images/@ma8am_tea تارت فانيلا.jpg" alt>
+
+                                    <div class="text-list">
+                                        <h3>
+                                            <em>IT'S ALL</em>
+                                            ABOUT <br>
+                                            THE DETAILS
+                                        </h3>
+
+                                        <ul class="list">
+                                            <li>Soft, ambient lighting</li>
+                                            <li>Cozy seating arrangements</li>
+                                            <li>Elegant decor elements</li>
+                                            <li>Natural wood accents</li>
+                                            <li>Luxurious textiles and fabrics</li>
+                                            <li>Artistic wall art and installations</li>
+                                            <li>Inviting scent of freshly brewed coffee</li>
+                                            <li>Subtle background music</li>
+                                            <li>Indoor greenery and plants</li>
+                                            <li>Warm color palette</li>
+                                            <li>Open and airy layout</li>
+                                            <li>Unique architectural features</li>
+                                            <li>Seasonal decorations</li>
+                                            <li>Tranquil outdoor seating area</li>
+                                            <li>Personalized service atmosphere</li>
+                                        </ul>
+                                    </div>                                        
+                                </div>
+
+                                <div class="img-list">
+                                    <div class="img-item item1">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipPsQ2RkA8AhdrqKy85PNo1ilU8lmAM4apjvL-lg=s1360-w1360-h1020" alt>
+                                    </div>
+
+                                    <div class="img-item item2">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipNhMJh7rhT3IeGb_ceg0Ec-BHrxxa-euVqnUlzs=s1360-w1360-h1020" alt>
+                                    </div>
+
+                                    <div class="img-item item3">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipPZdMuENwZPZJf2Bhifn015nBq7HBuBhDK9dIup=s1360-w1360-h1020" alt>
+                                    </div>
+
+                                    <div class="img-item item4">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipO2oGy5OqGaFWTfxIuk6LER5y7vMl_ZKUFfvQmZ=s1360-w1360-h1020" alt>
+                                    </div>
+
+                                    <div class="img-item item5">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipPKNiKe6NzvS95rArIStE3wHGDt0pGgW521RoTA=s1360-w1360-h1020" alt>
+                                    </div>
+
+                                    <div class="img-item item6">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipM6eSo6kyC5FlJDuMUjg3jUtyNk7v-RY8KkJYgw=s1360-w1360-h1020" alt>
+                                    </div>
+
+                                    <div class="img-item item7">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipNDjcyCi40PBhrqplMAJeo4bEH3QXQs74hRnE24=s1360-w1360-h1020" alt>
+                                    </div>
+
+                                    <div class="img-item item8">
+                                         <img src="https://lh3.googleusercontent.com/p/AF1QipOUkI-Vfm4qhybJd9u-NKZwYYOsQTGBR63eRxoJ=s1360-w1360-h1020" alt>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-area display-m">
+                <div class="img-list">
+                    <div class="img-item item1">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipPsQ2RkA8AhdrqKy85PNo1ilU8lmAM4apjvL-lg=s1360-w1360-h1020" alt>
+                    </div>
+
+                    <div class="img-item item2">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNhMJh7rhT3IeGb_ceg0Ec-BHrxxa-euVqnUlzs=s1360-w1360-h1020" alt>
+                    </div>
+
+                    <div class="img-item item3">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipPZdMuENwZPZJf2Bhifn015nBq7HBuBhDK9dIup=s1360-w1360-h1020" alt>
+                    </div>
+
+                    <div class="img-item item4">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipO2oGy5OqGaFWTfxIuk6LER5y7vMl_ZKUFfvQmZ=s1360-w1360-h1020" alt>
+                    </div>
+
+                    <div class="img-item item5">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipPKNiKe6NzvS95rArIStE3wHGDt0pGgW521RoTA=s1360-w1360-h1020" alt>
+                    </div>
+
+                    <div class="img-item item6">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipM6eSo6kyC5FlJDuMUjg3jUtyNk7v-RY8KkJYgw=s1360-w1360-h1020" alt>
+                    </div>
+
+                    <div class="img-item item7">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNDjcyCi40PBhrqplMAJeo4bEH3QXQs74hRnE24=s1360-w1360-h1020" alt>
+                    </div>
+
+                    <div class="img-item item8">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipOUkI-Vfm4qhybJd9u-NKZwYYOsQTGBR63eRxoJ=s1360-w1360-h1020" alt>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-order" id="sc2">
+            <h2 class="blind">연락 및 주문</h2>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOPes2gNZgTJX7IK5Y40bpx0ifttB-U6ZvAdUUL=s1360-w1360-h1020" alt class="bg">
+            <div class="inner">
+                <div class="group-call">
+                    <div class="title-area">
+                        <strong class="font-large">
+                            <span class="font-wrap">
+                                <span data-effect="y-move">ELEVATE YOUR EXPERIENCE</span>
+                            </span>
+                            <span class="font-wrap">
+                                <span data-effect="y-move">WITH LUXURIOUS INTERIORS</span>
+                            </span>
+                            <span class="font-wrap">
+                                <span data-effect="y-move">THAT LAST A LIFETIME</span>
+                            </span>
+                        </strong>
+                        </div>
+                        <div class="desc-area">
+                            <p class="font-small">AT MAQAM, WE BLEND ELEGANCE WITH MODERN TRENDS, CREATING A SPACE THAT IS BOTH FUNCTIONAL AND STYLISH. TRANSFORM YOUR ENVIRONMENT WITHOUT THE NEED FOR CONSTANT CHANGES—EMBRACE TIMELESS LUXURY.</p>
+                        </div>
+                        
+                    <a href="#" class="btn-trans font-small">
+                        <span>GET IN ToUCH</span>
+                    </a>
+                </div>
+
+                <div class="group-order">
+                    <div class="desc-area">
+                        <p class="font-medium">
+                            <span class="font-wrap" data-effect="y-move">
+                                <span data-effect="y-move">“AT MAQAM, WE BELIEVE THAT AESTHETICS</span>
+                            </span>
+                            <span class="font-wrap" data-effect="y-move">
+                                <span data-effect="y-move">AND A WELL-DESIGNED ENVIRONMENT</span>
+                            </span>
+                            <span class="font-wrap" data-effect="y-move">
+                                <span data-effect="y-move">WITH LUXURIOUS ACCENTS CREATE A</span>
+                            </span>
+                            <span class="font-wrap" data-effect="y-move">
+                                <span data-effect="y-move">POSITIVE IMPACT ON OUR LIVES” — 
+                                    <span class="point-fw300">MAQAM TEAM</span>
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                
+
+                    <a href="#" class="btn-trans font-small">
+                        <span>ORDER A DeSIGN</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-interior" id="sc3">
+            <h2>인테리어 소개</h2>
+            <div class="group-mind">
+                <div class="sticky">
+                    <div class="title-area">
+                        <h3 class="font-large">
+                            EXPERIENCE A SERENE AMBIENCE <br> AT MAQAM
+                        </h3>
+                    </div>
+                
+                    <div class="desc-area">
+                        <p>AT MAQAM, THE AMBIENCE IS CRAFTED TO OFFER A SENSE OF SERENITY AND ELEGANCE. <span class="point-gray">SOFT, WARM LIGHTING</span> CREATES A COZY ENVIRONMENT, WHILE <span class="point-gray">SOPHISTICATED DESIGN ELEMENTS</span> ADD A TOUCH OF LUXURY.</p>
+                        <p>THE DELICATE BALANCE OF <span class="point-gray">OPEN SPACES</span> AND INTIMATE NOOKS ALLOWS GUESTS TO CHOOSE BETWEEN <span class="point-gray">SOCIALIZING</span> AND RELAXING IN A PERSONALIZED SETTING.</p>
+                        <p>A CURATED SELECTION OF MUSIC, ALONG WITH THE <span class="point-gray">AROMA OF FRESHLY BREWED COFFEE</span> AND BAKED GOODS, ENHANCES THE SENSORY EXPERIENCE, MAKING EVERY VISIT TO MAQAM A MEMORABLE ONE.</p>
+                    </div>
+                </div>
+            </div>
+        
+            </div>
+
+            
+
+                                
+
+                        
+                       
+                            </div>
+                        </div>
+                    </div>
+        </section>
+          
+        </section>
+
+        <section class="sc-order-interior">
+            <h2 class="blind">인테리어를 주문해보세요</h2>
+            <div class="group-img">
+                <div class="img-box">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipNhMJh7rhT3IeGb_ceg0Ec-BHrxxa-euVqnUlzs=s1360-w1360-h1020" alt>
+                </div>
+
+                <div class="img-box">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipPV28MYw-RAGNQVOWPDvW82y09sB7Qm1Tj4rcwV=s1360-w1360-h1020" alt>
+                </div>
+            </div>
+
+            <div class="group-slide">
+                <div class="sticky">
+                    <div class="content-wrap">
+                        <div class="area1">
+                            <div class="video-area">
+                                <video src="./assets/video/interior-bg.mp4" autoplay muted loop></video>
+                            </div>
+
+                            <ul class="list-area" data-effect="x-move">
+                                <li class="list-item">
+                                    <div class="item-img">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipMUNHpvRC_B-PUJjTfaFLpZ_ULysYL6xnORMesi=s1360-w1360-h1020" alt>
+                                    </div>
+                                    <div class="item-title">
+                                        <p class="font-small point-fw300">
+                                            INTERIOR DESIGN THAT EXCEEDS EXPECTATIONS <br> ELEGANT AND INVITING
+                                        </p>
+                                        
+                                    </div>
+                                </li>
+
+                                <li class="list-item">
+                                    <div class="item-img">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipPs2bbMoszJx0hutQwPU85brhj8VHT5NTbsGiXb=s1360-w1360-h1020" alt>
+                                    </div>
+                                    <div class="item-title">
+                                        <p class="font-small point-fw300">
+                                            FROM EVERY DETAIL <br> TO A PERFECTLY CURATED SPACE
+                                        </p>
+                                        
+                                    </div>
+                                </li>
+
+                                <li class="list-item">
+                                    <div class="item-img">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipMrpbLX_029K_4UxIqV3_1JlWGqe9WzQeK_3Rfo=s1360-w1360-h1020" alt>
+                                    </div>
+                                    <div class="item-title">
+                                        <p class="font-small point-fw300">
+                                            YOUR VISION, <br> OUR MASTERFUL EXECUTION
+                                        </p>
+                                        
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="order-area">
+                            <div class="title-wrap">
+                                <div class="title-wrap-img">
+                                    <img src="https://lh3.googleusercontent.com/p/AF1QipOucH3Le-8DlqYKl9Kc3xy-ln5N5z7RspX3t3l6=s1360-w1360-h1020" alt>
+                                </div>
+
+                                <h3 class="font-large">
+                                    BOOK YOUR TABLE <br>
+                                    WITH EASE AND STYLE
+                                </h3>
+                                
+                                
+                                <div class="title-wrap-img">
+                                    <img src="https://lh3.googleusercontent.com/p/AF1QipNqz6BtwQMLwGlXa9dZWBXDWTWFtI0aB-AA4GoG=s1360-w1360-h1020" alt>
+                                </div>
+                            </div>
+
+                            <div class="desc-wrap">
+                                <p>
+                                    WE LISTEN TO EVERY DETAIL OF YOUR PREFERENCES <br>
+                                    OFFERING EXPERIENCES TAILORED TO YOUR TASTE <br>
+                                    LET'S MAKE YOUR NEXT VISIT TO MAQAM UNFORGETTABLE
+                                </p>
+                            </div>
+
+                            <a href="#" class="btn-trans black font-small">
+                                <span>GET IN ToUCH</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group-interior">
+                <div class="sticky">
+                    <div class="info-area area1">
+                        <div class="desc-area">
+                            <div class="text-box1">
+                                <span class="font-small">FOR BODY</span>
+                                <strong class="font-medium">HARMONY OF <br> TEXTURES</strong>
+                            </div>
+                        </div>
+                        <div class="img-area">
+
+                            <div class="img-box1">
+                                <img src="https://lh3.googleusercontent.com/p/AF1QipNt2trwSYVqYfCa2_RZ_nsDskDHtDUt92eh3dJ0=s1360-w1360-h1020" alt>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-area area2">
+                        <div class="desc-area">
+                            <div class="text-box2">
+                                <span class="font-small">FOR THE SENSES</span>
+                                <strong class="font-medium">A SYMPHONY OF <br> TEXTURES</strong>                                
+                            </div>
+                        </div>
+                        <div class="img-area">
+                            <div class="img-box2">
+                                <img src="https://lh3.googleusercontent.com/p/AF1QipMmGN5Lwfu6xV8n_S03N2XwwNEmoGK9v9Go-tG2=s1360-w1360-h1020" alt>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-area area3">
+                        <div class="desc-area">
+                            <div class="text-box3">
+                                <span class="font-small">FOR THE SPIRIT</span>
+                                <strong class="font-medium">EXQUISITE <br> ACCENTS</strong>                                
+                            </div>
+                        </div>
+                        <div class="img-area">
+                            <div class="img-box3">
+                                <img src="https://lh3.googleusercontent.com/p/AF1QipNBh-ynhfY9l9eyBIreu10vrt3N37TjkZ_UHPYb=s1360-w1360-h1020" alt>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-area">
+                    <div class="content cont1">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNHkNTMjy00XbVrnQa5KTlgVKE4Fnww8P4AG7UA=s1360-w1360-h1020" alt>
+                    </div>
+                    <div class="content cont2">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNjSbfqHuLP0RYwbHzNEA9JmIusKbbkzqcSSSwN=s1360-w1360-h1020" alt>
+                    </div>
+                    <div class="content cont3">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNuPvojnDLoKibZutsvZgrt-QV34zFpYbfsVx1m=s1360-w1360-h1020" alt>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-visual" id="sc5">
+            <h2>MAQAM</h2>
+
+            <div class="img-box">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipN-Kltu5Bjibd1Z4XpJMiWX79IVnsQm0yWa0Hy-=s1360-w1360-h1020" alt>
+            </div>
+
+            <div class="text-bg" data-effect="y-move"></div>
+        </section>
+
+        
+
+    <footer id="footer">
+        <h2 class="blind">URBANCHIC 푸터</h2>
+        <address class="info-area font-medium">
+           
+            <span>+966 13 361 6627</span>
+        </address>
+
+        <div class="group-link">
+            <div class="link-area font-small">
+                <span class="point-gray"></span>
+
+                <nav class="sns-link">
+                    <ul class="sns-link-list">
+                        <li>
+                            <a href="https://www.instagram.com/ma8am_tea/?hl=en">INSTAGRAM</a>
+                        </li>
+                        <li>
+                            <a href="#">FACEBOOK</a>
+                        </li>
+                        <li>
+                            <a href="tel:+966 13 361 6627">Call Us</a>
+
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/place/MAQAM/@27.0191747,49.6446428,21z/data=!4m6!3m5!1s0x3e35a186ea46069d:0xa21d88b16e87319a!8m2!3d27.0192553!4d49.6446629!16s%2Fg%2F11txnnk51s?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D">LOCATION</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <small class="point-gray"></small>
+            </div>
+
+                    
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
